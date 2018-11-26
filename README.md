@@ -12,7 +12,7 @@ A HTML-based IDS alert visualization tool
 
 ## Overview
 
-Panopticon is intended to provide a visual map display capability for IDS (or other) alert similar to those vendor animated threat map sites that everyone has running in their SOC. But useful.
+Panopticon is intended to provide a visual map display capability for IDS (or other) alerts...similar to those vendor animated threat map sites that everyone has running in their SOC. But useful.
 
 It is a cherrypy-based web server with an HTML5 (paper.js) front-end map display ("Oh, the colors!"). It is able to receive JSON alerts via a simple HTTP API from something like Logstash. It then feeds them to anyone watching the alert map in their browser (or on the 'big screen' in the SOC).
 
