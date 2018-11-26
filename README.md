@@ -17,14 +17,14 @@ It is a cherrypy-based web server with an HTML5 (paper.js) front-end map display
 
 ## Installation
 
-Panopticon is written in *Python 3* and both that and *cherrypy* are required. The included scripts for generating test alerts also require *requests*.
+Panopticon is written in *python 3* and both that and *cherrypy* are required. The included scripts for generating test alerts also require *requests*.
 
 Eventually, it will be available via *pip*, but today...copy and run any way you can run a CherryPY server. The most straight-forward:
 
     cd /wherever/you/put/the/files
     python panopticon.py  (or python3 panopticon.py if you are on a Linux distro that is trying to have both Python 3 and 2.7)
  
- Of course, you can get fancy and daemonize it, etc. like any other *cherrypy* app. Look at the instructions in the CherryPY docs.
+ Of course, you can get fancy and daemonize it, etc. like any other *cherrypy* app. Look at the instructions in the *cherrypy* docs.
 
 ## Configuration
 
