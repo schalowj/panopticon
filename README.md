@@ -6,7 +6,7 @@ A HTML-based IDS alert visualization tool
 > is not quite ready for prime time.
 >
 > It was written in a caffeine fueled haze, while avoiding my family over the
-> Thanksgiving holiday. The Javascript especially looks like garbage (it is 90% javascript).
+> Thanksgiving holiday. The Javascript especially looks like garbage (partially because of me and partially because it is javascript).
 >
 > Did I mention that I really hate javascript? Sigh.
 
