@@ -60,6 +60,8 @@ The `[Client]` section has a many more client display config items, both obvious
 
 As for how to get things sent to it...thats on you. Try the HTTP Output plugin in Logstash if you are using that. Or be creative. See below for a way to gin up some test alerts to make sure its working.
 
+The JSON for the alert should be sent to the app's /alert node (ex. `http://my.server.url:8080/alert`).
+
 The parameters it is expecting:
 
 `"feed"`(required) - the name of the feed you are submitting the alert to.
@@ -81,6 +83,10 @@ The parameters it is expecting:
 Don't mess with the server config stuff like `[/]`. See the comment there. Unless you want to break it. Or re-write it. In that case, pull-request FTW.
 
 ## Operation
+
+The map front-end is accessible at the server's root url, by default on port 8080:
+
+`http://my.server.url:8080`
 
 The GUI is fairy simple. Drag the map around, or use the triangle shaped arrow buttons on the lower right to scroll around. This is more useful if you are zoomed in (using the round (+) icon or the z key on the keyboard). You can zoom out with the round (-) icon or the x key. 
 
