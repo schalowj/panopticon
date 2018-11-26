@@ -14,18 +14,18 @@ A HTML-based IDS alert visualization tool
 
 Panopticon is intended to provide a visual map display capability for IDS (or other) alert similar to those vendor animated threat map sites that everyone has running in their SOC. But useful.
 
-It is a CherryPY-based web server with an HTML5 (paper.js) front-end map display ("Oh, the colors!"). It is able to receive JSON alerts via a simple HTTP API from something like Logstash. It then feeds them to anyone watching the alert map in their browser (or on the 'big screen' in the SOC).
+It is a cherrypy-based web server with an HTML5 (paper.js) front-end map display ("Oh, the colors!"). It is able to receive JSON alerts via a simple HTTP API from something like Logstash. It then feeds them to anyone watching the alert map in their browser (or on the 'big screen' in the SOC).
 
 ## Installation
 
-Panopticon is written in *Python 3* and both that *CherryPY*. The included scripts for generating test alerts also require *requests*.
+Panopticon is written in *Python 3* and both that *cherrypy*. The included scripts for generating test alerts also require *requests*.
 
 Eventually, it will be available via *pip*, but today...copy and run any way you can run a CherryPY server. The most straight-forward:
 
     cd /wherever/you/put/the/files
     python panopticon.py  (or python3 panopticon.py if you are on a Linux distro that is trying to have both Python 3 and 2.7)
  
- Of course, you can get fancy and daemonize it, etc. like any other CherryPY app. Look at the instructions in the CherryPY docs.
+ Of course, you can get fancy and daemonize it, etc. like any other *cherrypy* app. Look at the instructions in the CherryPY docs.
 
 ## Configuration
 
@@ -58,6 +58,8 @@ Regions can overlap. They are evaluated from top to bottom, with the IP falling 
 The `[Client]` section has a many more cleint disply config items, both obvious and obscure ("Change all the colors!"). The most useful is the **`RefreshRate`** setting...this controls how often (in milliseconds) the client will attempt to get data from the server. Change for your needs. Also `logoText` will let you put a little of your own branding on it.
 
 As for how to get things sent to it...that on you. Try the HTTP Output plugin in Logstash if you are using that. Or be creative. See below for a way to gin up some test alerts to make sure its working.
+
+Don't mess with the server config stuff like `[/]`. See the comment there. Unless you want to break it. Or re-write it. In that case, pull-request FTW.
 
 ## Operation
 
