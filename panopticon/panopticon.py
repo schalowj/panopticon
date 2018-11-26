@@ -160,7 +160,7 @@ class Panopticon(object):
 		if "msg" in alertData:
 			newAlert["msg"] = alertData["msg"]
 		else:
-			newAlert["type"] = datetime.utcnow().isoformat()
+			newAlert["msg"] = ""
 		self.feedlist[newAlert["feed"]]["maxid"] = self.feedlist[newAlert["feed"]]["maxid"] + 1
 		newAlert["id"] = self.feedlist[newAlert["feed"]]["maxid"]
 		self.feedlist[newAlert["feed"]]["alerts"].append(newAlert)
