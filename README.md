@@ -57,7 +57,7 @@ Each regios has an array of **`"ipranges"`**. The **`"start"`** and **`"end"`** 
 
 Regions can overlap. They are evaluated from top to bottom, with the IP falling in the first one it matches.
 
-The `[Client]` section has a many more cleint disply config items, both obvious and obscure ("Change all the colors!"). The most useful is the **`RefreshRate`** setting...this controls how often (in milliseconds) the client will attempt to get data from the server. Change for your needs. Also `logoText` will let you put a little of your own branding on it.
+The `[Client]` section has a many more client disply config items, both obvious and obscure ("Change all the colors!"). The most useful is the **`RefreshRate`** setting...this controls how often (in milliseconds) the client will attempt to get data from the server. Change for your needs. Also `logoText` will let you put a little of your own branding on it.
 
 As for how to get things sent to it...that on you. Try the HTTP Output plugin in Logstash if you are using that. Or be creative. See below for a way to gin up some test alerts to make sure its working.
 
