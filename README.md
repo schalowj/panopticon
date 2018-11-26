@@ -37,7 +37,7 @@ The configuration file is in the config directory (really!): `panopticon.conf`
 
 Short version is that what you care about are the maps and feeds.
 
-Feeds first: there is a **`[Feeds]`** section in the config file. The default config has two feed names listed under the **`feeds`** entry. You need at least one. Each one repesents a seperate alert feed...give the unique names. Alerts are sent to a feed, and maps can be configured to receive from multiple feeds (see below). All you need are names and the app takes care of the rest. Simple.
+Feeds first: there is a **`[Feeds]`** section in the config file. The default config has two feed names listed under the **`feeds`** entry. You need at least one. Each one repesents a seperate alert feed...give them unique names. Alerts are sent to a feed, and maps can be configured to receive from multiple feeds (see below). All you need are names and the app takes care of the rest. Simple.
 
 The map configs are less simple. The uglyish pythony, JSON-y stuff in the **`[Maps]`** section defines each alert map that will be available. The default config comes with two sample maps, so ctrl-c, ctrl-v. The **`defaultMap`** entry defines which one displays by default and it must exactly match the **`name`** field of one of the maps.
 
