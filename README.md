@@ -60,6 +60,24 @@ The `[Client]` section has a many more client display config items, both obvious
 
 As for how to get things sent to it...that on you. Try the HTTP Output plugin in Logstash if you are using that. Or be creative. See below for a way to gin up some test alerts to make sure its working.
 
+The parameters it is expecting:
+
+`"feed"`(required) - the name of the feed you are submitting the alert to.
+
+`"src"` (required) - the source IP
+
+`"dst"` (required) - the destination IP
+
+`"src_label"` (optional) - an endpoint description of your choice
+
+`"dst_label"` (optional) - same as above
+
+`"time"` (optional) - an alert time (if not provided Panopticon will use the time it was received)
+
+`"type""` (optional) - a string of your choice. Can be used to color code rays in the map view by type.
+
+`"msg"` (optional) - a message to be displayed in the alert text (maybe a dump of the IDS alert description itself?)
+
 Don't mess with the server config stuff like `[/]`. See the comment there. Unless you want to break it. Or re-write it. In that case, pull-request FTW.
 
 ## Operation
