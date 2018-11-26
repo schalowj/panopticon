@@ -90,7 +90,7 @@ The map front-end is accessible at the server's root url, by default on port 808
 
 The GUI is fairy simple. Drag the map around, or use the triangle shaped arrow buttons on the lower right to scroll around. This is more useful if you are zoomed in (using the round (+) icon or the z key on the keyboard). You can zoom out with the round (-) icon or the x key. 
 
-The other two round icons in the navigation are operate as follows: the one with the tack icon fades the GUI elements out for a better view of your awesome map. If you mous over them they will temporarily re-appear. Click the icon again to re-pin them. The one with the 'univeral settings symbol' is...settings. It beings up a settings box where you can select another map (currently the only setting available in the GUI).
+The other two round icons in the navigation are operate as follows: the one with the tack icon fades the GUI elements out for a better view of your awesome map. If you mouse over them they will temporarily re-appear. Click the icon again to re-pin them. The one with the 'univeral settings symbol' is...settings. It brings up a settings box where you can select another map (currently the only setting available in the GUI).
 
 Clicking on the logo on the top left will show a running display of the last few alerts in text form (five by default, but you can change that in the config file (`alertListSize`). Click the logo again to make it go away.
 
