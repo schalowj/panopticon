@@ -19,7 +19,7 @@ It is a cherrypy-based web server with an HTML5 (paper.js) front-end map display
 
 Panopticon is written in *python 3* and both that and *cherrypy* are required. The included scripts for generating test alerts also require *requests*.
 
-Eventually, it will be available via *pip*, but today...copy and run any way you can run a CherryPY server. The most straight-forward:
+Eventually, it will be available via *pip*, but today...copy and run any way you can run a *cherrypy* server. The most straight-forward:
 
     cd /wherever/you/put/the/files
     python panopticon.py  (or python3 panopticon.py if you are on a Linux distro that is trying to have both Python 3 and 2.7)
@@ -52,7 +52,7 @@ The **`"regions"`** array has a bit more structure:
  
 For each region **`"x1"`**, **`"y1"`**, **`"x2"`** and **`"y2"`** are the coordinates (in the dimensions of your chosen image file) of a rectangular region that will be used to plot one or more ranges of IP enpoints. **`"name"`** is a label that isn't really used anywhere at present, so don't stress about it.
 
-Each regios has an array of **`"ipranges"`**. The **`"start"`** and **`"end"`** values indicate a range of IPs that will be considered to be included in the region (and put there).
+Each region has an array of **`"ipranges"`**. The **`"start"`** and **`"end"`** values indicate a range of IPs that will be considered to be included in the region (and put there).
 
 Regions can overlap. They are evaluated from top to bottom, with the IP falling in the first one it matches.
 
