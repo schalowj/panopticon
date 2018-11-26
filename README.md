@@ -5,8 +5,7 @@ A HTML5-based IDS alert visualization tool
 > The 'ALPHA' designator should be a hint that this code, though working,
 > is not quite ready for prime time.
 >
-> It was written in a caffeine fueled haze, while avoiding my family over the
-> Thanksgiving holiday. The Javascript especially looks like garbage (partially because of me and partially because it is javascript).
+> It was written in a caffeine fueled haze, while avoiding my family over the Thanksgiving holiday. Its missing some stuff...like formatting and comments. And any kind of standards. The Javascript especially looks like garbage (partially because of me and partially because it is javascript).
 >
 > Did I mention that I really hate javascript? Sigh.
 
