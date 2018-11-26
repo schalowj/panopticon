@@ -41,7 +41,7 @@ Feeds first: there is a **`[Feeds]`** section in the config file. The default co
 
 The map configs are less simple. The uglyish pythony, JSON-y stuff in the **`[Maps]`** section defines each alert map that will be available. The default config comes with two sample maps, so ctrl-c, ctrl-v. The **`defaultMap`** entry defines which one displays by default and it must exactly match the **`name`** field of one of the maps.
 
-The elements of each of the 'maps' entries (its a list) are as follows:
+The elements of each of the **`maps`** entries (its a list) are as follows:
 
 **`"name"`** - the unique, displayable map name
 **`"map_url`** - the name of the image that will be used. It must reside in the `images` directory
