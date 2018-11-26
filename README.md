@@ -44,14 +44,16 @@ The map configs are less simple. The uglyish pythony, JSON-y stuff in the **`[Ma
 The elements of each of the **`maps`** entries (its a list) are as follows:
 
 **`"name"`** - the unique, displayable map name
+
 **`"map_url`** - the name of the image that will be used. It must reside in the `images` directory
+
 **`"feeds"`** - an array consisting of the list of feeds (see above) that will display on this map
 
 The **`"regions"`** array has a bit more structure:
  
 For each region **`"x1"`**, **`"y1"`**, **`"x2"`** and **`"y2"`** are the coordinates (in the dimensions of your chosen image file) of a rectangular region that will be used to plot one or more ranges of IP enpoints. **`"name"`** is a label that isn't really used anywhere at present, so don't stress about it.
 
-Each regions has an array of **`"ipranges"`**. The **`"start"`** and **`"end"`** values indicate a range of IPs that will be considered to be included in the region (and put there).
+Each regios has an array of **`"ipranges"`**. The **`"start"`** and **`"end"`** values indicate a range of IPs that will be considered to be included in the region (and put there).
 
 Regions can overlap. They are evaluated from top to bottom, with the IP falling in the first one it matches.
 
