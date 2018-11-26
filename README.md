@@ -1,7 +1,7 @@
 # Panopticon v1.0 ALPHA
 A HTML-based IDS alert visualization tool
 
-** A note from the author:**
+**A note from the author:**
 > The 'ALPHA' designator should be a hint that this code, though working,
 > is not quite ready for prime time.
 >
